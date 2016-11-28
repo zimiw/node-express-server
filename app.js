@@ -4,6 +4,7 @@ var path = require('path');
 var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
+var compression = require('compression');
 var bodyParser = require('body-parser');
 
 var index = require('./routes/index');
@@ -23,13 +24,13 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));
-
+app.use(compression());
+// app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', index);
 app.use('/users', users);
 
 app.get('*', function(req, res) {
-  res.render('index', { title: 'Express', host: "http://localhost:3007" });
+  res.render('index', { title: 'react-redux-webpack', host: "http://localhost:3007" });
 });
 
 // catch 404 and forward to error handler
