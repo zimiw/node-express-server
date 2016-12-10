@@ -1,6 +1,9 @@
 # express-node-server 
 A basic express-node-server update architecture
 
+2016.12.11号更新说明  
+1、注释了mongodb数据库的连接代码，因为考虑到有很多人可能还没有安装mongodb或者是采用其他数据库连接方案  
+
 注意：下载本项目的同时，请下载react-redux-webpack前端项目。  
 
 一个基于express实现的node服务器，跟我在git上开源的另外一个前端版本做前后端交互，本项目实现了服务器端返回index.html模板，
@@ -25,5 +28,5 @@ npm start
 
 前端代码访问首页，请在浏览器输入服务器地址，原理就是由服务器端返回html。
 ```
-http://localhost:9000
+http://localhost:9009
 ```
