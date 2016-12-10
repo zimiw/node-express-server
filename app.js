@@ -30,7 +30,7 @@ app.use('/', index);
 app.use('/users', users);
 
 app.get('*', function(req, res) {
-  res.render('index', { title: 'react-redux-webpack', host: "http://localhost:3007" });
+  res.render('index', { title: 'react-redux-webpack', host: "http://localhost:3011" });
 });
 
 // catch 404 and forward to error handler

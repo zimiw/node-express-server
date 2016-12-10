@@ -9,14 +9,15 @@ var debug = require('debug')('untitled:server');
 var http = require('http');
 var mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost/react');
-
-var db = mongoose.connection;
-db.on('error', console.error.bind(console, 'connection error:'));
-db.once('open', function (callback) {
-  // yay!
-  console.log('连接成功...')
-});
+//数据库连接方案，未安装数据库的就注释掉
+// mongoose.connect('mongodb://localhost/react');
+//
+// var db = mongoose.connection;
+// db.on('error', console.error.bind(console, 'connection error:'));
+// db.once('open', function (callback) {
+//   // yay!
+//   console.log('连接成功...')
+// });
 
 /**
  * Get port from environment and store in Express.

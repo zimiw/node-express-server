@@ -8,7 +8,7 @@ var nav = require('../data/navigation.json')
 var Navigation = require('../models/Navigation')
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'react-redux-webpack', host: "http://localhost:3007" });
+  res.render('index', { title: 'react-redux-webpack', host: "http://localhost:3011" });
 });
 
 router.get('/book/navigation', function (req, res, next) {
